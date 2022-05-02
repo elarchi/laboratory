@@ -12,9 +12,7 @@ import colors from "./colors";
 //expo
 import Constants from "expo-constants";
 //icons
-import { FontAwesome } from "@expo/vector-icons";
-import { Feather } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
+import { FontAwesome, Feather, FontAwesome5 } from "@expo/vector-icons";
 
 export default function App() {
   return (
