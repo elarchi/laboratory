@@ -30,4 +30,8 @@ print(floor(3.7))  # return 3
 print(ceil(3.7))  # return 4
 print(sqrt(36))  # return 6
 
+# INPUT
+name = input("Enter your name here: ")
+print("Hello "+name)
+
 is_true = True  # boolean with a capital letter  # variable's name isn't like JS camel,  but use underscore.
