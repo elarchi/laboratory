@@ -12,7 +12,10 @@ print(phrase[0])  # the character at the position 0 of the variable ===> H
 print(phrase.index("W"))  # .indexOf();
 print(phrase.replace("Hello", "Goodbye"))
 
-# NUMBERS
+# BOOLEAN
+is_true = True  # boolean with a capital letter  # variable's name isn't like JS camel,  but use underscore.
+
+# NUMBER
 print(3 + 4)
 my_number = 5
 print(my_number)  # 5
@@ -32,6 +35,16 @@ print(sqrt(36))  # return 6
 
 # INPUT
 name = input("Enter your name here: ")
-print("Hello "+name)
+print("Hello " + name)
 
-is_true = True  # boolean with a capital letter  # variable's name isn't like JS camel,  but use underscore.
+num1 = input("Enter a number: ")
+num2 = input("Enter another number: ")
+result = num1 + num2
+print(result)  # the result will convert each number into a string
+# and will concatenate with tow string ===> 3 and 5 => 35
+
+result2 = int(num1) + int(num2)  # the result will be a integer this time  ===> 3 and 5 => 8
+print(result2)
+
+result3 = float(num1)+float(num2)  # to use decimal number
+print(result3)
