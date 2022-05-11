@@ -61,31 +61,51 @@ print(plural_noun + " are blue")
 print("I love " + celebrity)
 # ---------------------------------------------------------------------------------
 # LIST
+# contain different kind of data: str, int, boolean
 lucky_numbers = [4, 8, 15, 16, 23, 42]
 friends = ["Lucas", "Juary", "Victor", "Alice", "Jayne", "Jayne"]
 
 print(friends)
 print(friends[1])  # Juary
-print(friends[-2])  # Jayne
+print(friends[-2])  # Jayne  (only one value 0)
 print(friends[1:])  # Juary, Victor, Alice, Jayne, Jayne
 print(friends[1:3])  # Juary Victor, not Alice etc
-print(friends.sort())  # return the list in alphabetic order
+friends.sort()  # we have to do the function before print the result
+# we can't do print(friends.sort())
+print(friends)  # return the list in alphabetic order
 
 friends[1] = "Mike"  # will update our list
-friends.extend(lucky_numbers)  # return Lucas, Juary, Victor, Alice, Jayne, Jayne, 4, 8, 15, 16, 23, 42
-friends.append("Manu")  # will add Manu at the end of the list
-friends.insert(1, "Kelly")  # will add Kelly at the index 1
-friends.remove("Victor")  # will remove Victor
-friends.pop()  # will pop/remove the last element of the list
+print(friends)
+friends.extend(lucky_numbers)
+print(friends)  # return Alice, Mike, Jayne, Juary, Lucas, Victor, 4, 8, 15, 16, 23, 42
+friends.append("Manu")  # append means add, "apposer"
+print(friends)  # will add Manu at the end of the list
+friends.insert(1, "Kelly")
+print(friends)  # will add Kelly at the index 1
+friends.remove("Victor")
+print(friends)  # will remove Victor
+friends.pop()
+print(friends)  # will pop/remove the last element of the list
 
 print(friends.index("Lucas"))  # give the index of the element
 # return an error if the element doesn't exist in the list
 print(friends.count("Jayne"))  # will counts the number of times the element appears
-print(lucky_numbers.sort())  # return the list by ascendant order
-print(lucky_numbers.reverse())  # return the list in the reverse order
+lucky_numbers.sort()
+print(lucky_numbers)  # return the list by ascendant order
+lucky_numbers.reverse()
+print(lucky_numbers)  # return the list in the reverse order
 
 friends2 = friends.copy()
+print(friends2)
 friends.clear()  # will return an empty list
+print(friends)
+
+# I guest if I update the list, I need to use the function outside of the print one
+# lucky_numbers.sort()
+# print(lucky_numbers)
+# If I just want some info from the list, I can use the function inside the list
+# print(friends.index("Lucas"))
+
 # ---------------------------------------------------------------------------------
 # TUPLES
 # can't be changed or modified
@@ -98,8 +118,6 @@ print(coordinates[1])  # 5
 # ---------------------------------------------------------------------------------
 # LIST AND TUPLES
 coordinates2 = [(4, 5), (6, 7), (80, 34)]
-
-
 # most of the time we use LIST
 # ---------------------------------------------------------------------------------
 # FUNCTION
