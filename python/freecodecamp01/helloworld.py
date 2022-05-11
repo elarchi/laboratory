@@ -1,4 +1,4 @@
-from math import *
+from math import *  # to use math functions
 
 # STRING
 print("Hello World")  # console.log
@@ -48,3 +48,14 @@ print(result2)
 
 result3 = float(num1)+float(num2)  # to use decimal number
 print(result3)
+
+# let's create a mini game: Madlib
+
+color = input("Enter a color: ")
+plural_noun = input("Enter a plural noun: ")
+celebrity = input("Enter a celebrity: ")
+
+print("Roses are "+color)
+print(plural_noun+" are blue")
+print("I love "+celebrity)
+
