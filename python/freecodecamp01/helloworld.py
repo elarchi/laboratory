@@ -85,3 +85,19 @@ print(lucky_numbers.sort())  # return the list by ascendant order
 print(lucky_numbers.reverse())  # return the list in the reverse order
 
 friends2 = friends.copy()
+# ---------------------------------------------------------------------------------
+# TURPLES
+# can't be changed or modified
+# used for data that will never change
+coordinates = (4, 5)
+
+print(coordinates[0])  # 4
+print(coordinates[1])  # 5
+
+coordinates[1] = 10  # return an error, because we can't change a turple
+# ---------------------------------------------------------------------------------
+# LIST AND TURPLES
+coordinates2 = [(4, 5), (6, 7), (80,34)]
+# most of the time we use LIST
+# ---------------------------------------------------------------------------------
+
