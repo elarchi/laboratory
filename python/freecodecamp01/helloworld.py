@@ -142,3 +142,28 @@ def cube(num):
 result = cube(4)
 print(result)
 # ---------------------------------------------------------------------------------
+# IF STATEMENT
+is_male = True
+is_male2 = False
+is_tall = True
+
+if is_male:
+    print("You are a male")
+    # will print You are a male
+
+if is_male2 or is_tall:
+    print("You are a male or tall or both")
+    # will print nothing, because the condition is_male isn't true
+else:
+    print("You are a female no tall")
+
+if is_male2 and is_tall:
+    print ("You are a tall male")
+elif is_male and not is_tall:
+    print("You are a short male")
+elif not is_male and is_tall:
+    print("You are a short male")
+else:
+    print("You are not male and not all")
+# ---------------------------------------------------------------------------------
+
