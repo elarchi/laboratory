@@ -158,12 +158,29 @@ else:
     print("You are a female no tall")
 
 if is_male2 and is_tall:
-    print ("You are a tall male")
+    print("You are a tall male")
 elif is_male and not is_tall:
     print("You are a short male")
 elif not is_male and is_tall:
     print("You are a short male")
 else:
     print("You are not male and not all")
-# ---------------------------------------------------------------------------------
 
+
+# ---------------------------------------------------------------------------------
+# IF STATEMENT AND COMPARISON
+
+def max_num(n1, n2, n3):
+    if n1 >= n2 and n1 >= n3:
+        return n1
+    elif n2 >= n1 and n2 >= n3:
+        return n2
+    else:
+        return n3
+
+
+# "dog" == "dog"  equal
+# "cat" != "dog"  not equal
+
+print(max_num(300, 40, 5))
+# ---------------------------------------------------------------------------------
