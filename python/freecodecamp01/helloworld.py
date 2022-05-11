@@ -63,41 +63,51 @@ print("I love " + celebrity)
 # LIST
 lucky_numbers = [4, 8, 15, 16, 23, 42]
 friends = ["Lucas", "Juary", "Victor", "Alice", "Jayne", "Jayne"]
+
 print(friends)
 print(friends[1])  # Juary
-print(friends[-2])  # Alice
-print(friends[1:])  # Juary Victor
-print(friends[1:3])  # Juary Victor, not Alice
+print(friends[-2])  # Jayne
+print(friends[1:])  # Juary, Victor, Alice, Jayne, Jayne
+print(friends[1:3])  # Juary Victor, not Alice etc
+print(friends.sort())  # return the list in alphabetic order
 
 friends[1] = "Mike"  # will update our list
 friends.extend(lucky_numbers)  # return Lucas, Juary, Victor, Alice, Jayne, Jayne, 4, 8, 15, 16, 23, 42
 friends.append("Manu")  # will add Manu at the end of the list
 friends.insert(1, "Kelly")  # will add Kelly at the index 1
 friends.remove("Victor")  # will remove Victor
-friends.clear()  # will return an empty list
 friends.pop()  # will pop/remove the last element of the list
 
-print(friends.index("Kevin"))  # give the index of the element
+print(friends.index("Lucas"))  # give the index of the element
 # return an error if the element doesn't exist in the list
 print(friends.count("Jayne"))  # will counts the number of times the element appears
-print(friends.sort())  # return the list in alphabetic order
 print(lucky_numbers.sort())  # return the list by ascendant order
 print(lucky_numbers.reverse())  # return the list in the reverse order
 
 friends2 = friends.copy()
+friends.clear()  # will return an empty list
 # ---------------------------------------------------------------------------------
-# TURPLES
+# TUPLES
 # can't be changed or modified
 # used for data that will never change
 coordinates = (4, 5)
 
 print(coordinates[0])  # 4
 print(coordinates[1])  # 5
-
-coordinates[1] = 10  # return an error, because we can't change a turple
+# coordinates[1] = 10  # return an error, because we can't change a tuple
 # ---------------------------------------------------------------------------------
-# LIST AND TURPLES
-coordinates2 = [(4, 5), (6, 7), (80,34)]
+# LIST AND TUPLES
+coordinates2 = [(4, 5), (6, 7), (80, 34)]
+
+
 # most of the time we use LIST
 # ---------------------------------------------------------------------------------
+# FUNCTION
+# def is the key word
+def say_hi(user_name, user_age):
+    print("Hello " + user_name + ". You are " + str(user_age))  # if user_age alone, we can't add number into a string
+    # we need to add str(user_age)
 
+
+say_hi("Mike", 67)
+say_hi("Steve", 89)
