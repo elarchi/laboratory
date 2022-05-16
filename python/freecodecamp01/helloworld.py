@@ -184,3 +184,20 @@ def max_num(n1, n2, n3):
 
 print(max_num(300, 40, 5))
 # ---------------------------------------------------------------------------------
+# BUILDING A BETTER CALCULATOR
+
+nb1 = float(input("Enter the first number: "))
+operator = input("Enter the operator: ")
+nb2 = float(input("Enter the second number: "))
+
+if operator == "+":
+    print(nb1 + nb2)
+elif operator == "-":   
+    print(nb1-nb2)
+elif operator == "*":
+    print(nb1 * nb2)
+elif operator == "/":
+    print(nb1/nb2)
+else :
+    print("Invalid operator")
+
