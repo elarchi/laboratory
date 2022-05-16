@@ -192,12 +192,27 @@ nb2 = float(input("Enter the second number: "))
 
 if operator == "+":
     print(nb1 + nb2)
-elif operator == "-":   
-    print(nb1-nb2)
+elif operator == "-":
+    print(nb1 - nb2)
 elif operator == "*":
     print(nb1 * nb2)
 elif operator == "/":
-    print(nb1/nb2)
-else :
+    print(nb1 / nb2)
+else:
     print("Invalid operator")
+# ---------------------------------------------------------------------------------
+# DICTIONARIES
+
+monthConversions = {
+    "Jan": "January",
+    "Fev": "February",
+    "Mar": "March",
+    "Dec": "December",
+
+}
+
+print(monthConversions.get("Jan", "Not a valid key"))
+# we can add a default value if the value asked by the user doesn't exist
+print(monthConversions["Jan"])
+# ---------------------------------------------------------------------------------
 
